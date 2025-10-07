@@ -24,7 +24,7 @@ This Project, I create an Azure Cosmos DB account and build a .NET console appli
 2. If you already have a resource group you want to use, proceed to the next step.
 3. Replace myResourceGroup with a name you want to use for the resource group. You can replace eastus with a region near you if needed.
 
-In this Cloudslice, we created a resource group (myResourceGrouplod55337464).
+This Cloudslice, we created a resource group (myResourceGrouplod55337464).
 
 ## Bash command
 >>> az group create --location eastus --name myResourceGroup
@@ -60,8 +60,7 @@ Now that the needed resources are deployed to Azure, the next step is to set up 
 ## Create the .NET console app.
 >>> dotnet new console
 
-## Configure the console application
-Run the following commands to add Microsoft.Azure.Cosmos, Newtonsoft.Json, and dotenv.net packages to the project.
+## Configure the console application: Run the following commands to add Microsoft.Azure.Cosmos, Newtonsoft.Json, and dotenv.net packages to the project.
 >>> dotnet add package Microsoft.Azure.Cosmos --version 3.*
 >>> dotnet add package Newtonsoft.Json --version 13.*
 >>> dotnet add package dotenv.net
@@ -83,8 +82,7 @@ Press Ctrl+S to save the file, then Ctrl+Q to exit the editor.
 ## Run the following command in the cloud shell to begin editing the application.
 >>> code Program.cs
 
-The code provides the overall structure of the app. 
-Review the comments in the code to get an understanding of how it works.
+## The code provides the overall structure of the app. Please take a look at the comments in the code to get an understanding of how it works.
 
 ```csharp
 using Microsoft.Azure.Cosmos;
@@ -164,7 +162,7 @@ public class Product
 }
 ```
 
-Now that the code is complete, save your progress use ctrl + s to save the file, and ctrl + q to exit the editor.
+## Now that the code is complete, save your progress use ctrl + s to save the file, and ctrl + q to exit the editor.
 
 
 ## Run the following command in the cloud shell to test for any errors in the project. If you do see errors, open the Program.cs file in the editor and check for missing code or pasting errors.
@@ -176,10 +174,10 @@ Now that the code is complete, save your progress use ctrl + s to save the file,
 
 
 ## The output should be something similar to the following example.
-1 line: Created or retrieved database: myDatabase
-2 Line: Created or retrieved container: myContainer
-3 Line: Created item: c549c3fa-054d-40db-a42b-c05deabbc4a6
-4 Line: Request charge: 6.29 RUs
+1. line: Created or retrieved database: myDatabase
+2. Line: Created or retrieved container: myContainer
+3. Line: Created item: c549c3fa-054d-40db-a42b-c05deabbc4a6
+4. Line: Request charge: 6.29 RUs
 
 
 ## In the Azure portal, navigate to the Azure Cosmos DB resource you created earlier. 
